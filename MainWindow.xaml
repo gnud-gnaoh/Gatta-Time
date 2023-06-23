@@ -5,8 +5,40 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Gatta_Time"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="900" Width="1600">
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="85"/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
 
+        <!-- Settings Row -->
+        <Grid Grid.Row="0">
+            <Button Background="Gray" HorizontalAlignment="Right" Width="70" Height="76"/>
+        </Grid>
+
+        <!-- Game Name Row -->
+        <Grid Grid.Row="1">
+            <TextBlock Text="Getta Time" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontSize="128"/>
+        </Grid>
+
+        <!-- Buttons Row -->
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Grid Grid.Column="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Button Grid.Row="0" Content="Focus Mode" HorizontalAlignment="Center" VerticalAlignment="Center" Width="620" Height="116" FontSize="40"/>
+                <Button Grid.Row="1" Content="Eye Care Mode" HorizontalAlignment="Center" VerticalAlignment="Center" Width="620" Height="116" FontSize="40"/>
+            </Grid>
+        </Grid>
     </Grid>
 </Window>
