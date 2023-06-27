@@ -1,0 +1,48 @@
+﻿<Window x:Class="Gatta_Time.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Gatta_Time"
+        mc:Ignorable="d"
+        Title="Window1" Height="900" Width="1600">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/Images/bgframe5.png"/>
+        </Grid.Background>
+
+        <Rectangle Fill="#63412A" Width="621" Height="93" HorizontalAlignment="Right" VerticalAlignment="Top"/>
+        <Rectangle Fill="#F2CA80" Width="611" Height="83" HorizontalAlignment="Right" VerticalAlignment="Top"/>
+        <Grid Width="611" Height="83" HorizontalAlignment="Right" VerticalAlignment="Top">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="3*"/>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="3*"/>
+            </Grid.ColumnDefinitions>
+
+            <Image Grid.Column="0" Source="/Images/coin.png" Width="69" Height="81" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+            <TextBlock Grid.Column="1" Text="1000" FontSize="40" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+            <Image Grid.Column="2" Source="/Images/money.png" Width="90" Height="85" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+            <TextBlock Grid.Column="3" Text="6969" FontSize="40" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        </Grid>
+
+        <Button Background="#F2CA80" Width="100" Height="100" HorizontalAlignment="Left" VerticalAlignment="Bottom" Click="cartButton_Click">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="50"/>
+                </Style>
+            </Button.Resources>
+            <Image Source="/Images/cart.png" Width="80" Height="80"/>
+        </Button>
+
+        <Button Background="#63412A" Width="100" Height="100" HorizontalAlignment="Left" VerticalAlignment="Top" Click="homeButton_Click">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="50"/>
+                </Style>
+            </Button.Resources>
+            <Image Source="/Images/home.png" Width="80" Height="80"/>
+        </Button>
+    </Grid>
+</Window>
