@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Gatta_Time
+namespace donescr
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -22,7 +22,7 @@ namespace Gatta_Time
     {
         public MainWindow()
         {
-            InitializeComponent();
+           // InitializeComponent();
         }
     }
 }
