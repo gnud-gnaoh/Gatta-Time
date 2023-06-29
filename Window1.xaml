@@ -8,7 +8,7 @@
         Title="Window1" Height="900" Width="1600">
     <Grid>
         <Grid.Background>
-            <ImageBrush ImageSource="/Images/bgframe5.png"/>
+            <ImageBrush ImageSource="/Backgrounds/frame5.png"/>
         </Grid.Background>
 
         <Rectangle Fill="#63412A" Width="621" Height="93" HorizontalAlignment="Right" VerticalAlignment="Top"/>
