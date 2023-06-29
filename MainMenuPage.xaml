@@ -5,10 +5,97 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:Gatta_Time"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
+      d:DesignHeight="900" d:DesignWidth="1600"
       Title="MainMenuPage">
+    <Page.Resources>
+        <ControlTemplate x:Key="NoMouseOverButtonTemplate"   
+                 TargetType="Button">
+            <Border Background="{TemplateBinding Background}"  
+          BorderBrush="{TemplateBinding BorderBrush}"  
+          BorderThickness="{TemplateBinding BorderThickness}">
+                <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"  
+                      VerticalAlignment="{TemplateBinding VerticalContentAlignment}" />
+            </Border>
 
+            <ControlTemplate.Triggers>
+                <Trigger Property="IsEnabled"  
+             Value="False">
+                    <Setter Property="Background"  
+              Value="{x:Static SystemColors.ControlLightBrush}" />
+                    <Setter Property="Foreground"  
+              Value="{x:Static SystemColors.GrayTextBrush}" />
+                </Trigger>
+            </ControlTemplate.Triggers>
+        </ControlTemplate>
+    </Page.Resources>
     <Grid>
-        
+        <Grid.Background>
+            <ImageBrush ImageSource="/Backgrounds/frame1.png"/>
+        </Grid.Background>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="85"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+
+        <!-- Settings Row -->
+        <Grid Grid.Row="0">
+            <Button Template="{StaticResource NoMouseOverButtonTemplate}" BorderThickness="0" Background="Transparent" HorizontalAlignment="Right" Width="70" Height="76">
+                <Image Source="/Images/settings.png"/>
+            </Button>
+        </Grid>
+
+        <!-- Game Name Row -->
+        <Grid Grid.Row="1">
+            <TextBlock Text="Gatta Time" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontSize="128" FontFamily="SVN-Retron 2000 Regular" Foreground="#63412A">
+                <TextBlock.Effect>
+                    <DropShadowEffect
+                          ShadowDepth="6"
+                          Direction="270"
+                          Color="Black"
+                          Opacity="0.3"
+                         BlurRadius="0"/>
+                </TextBlock.Effect>
+            </TextBlock>
+
+        </Grid>
+
+
+        <!-- Buttons Row -->
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Grid Grid.Column="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Button Template="{StaticResource NoMouseOverButtonTemplate}" BorderThickness="0" Background="Transparent" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" Width="620" Height="116">
+                    <Image Source="/Images/focus mode button.png" Width="615" Height="111"/>
+                </Button>
+                <Button Template="{StaticResource NoMouseOverButtonTemplate}" BorderThickness="0" Background="Transparent" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" Width="620" Height="116">
+                    <Image Source="/Images/eye mode button.png" Width="615" Height="111"/>
+                </Button>
+            </Grid>
+        </Grid>
+
+        <Grid Grid.Row="3" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="150" Height="150">
+            <Button Template="{StaticResource NoMouseOverButtonTemplate}" 
+                    BorderThickness="0" 
+                    Background="Transparent" 
+                    HorizontalAlignment="Center" 
+                    VerticalAlignment="Center" 
+                    Width="90" 
+                    Height="90"
+                    Click="ManualButton_Click">
+                <Image Source="/Images/qq.png"/>
+            </Button>
+        </Grid>
     </Grid>
 </Page>

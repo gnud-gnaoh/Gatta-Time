@@ -1,4 +1,5 @@
-﻿using System.Windows.Controls;
+﻿using System;
+using System.Windows.Controls;
 
 namespace Gatta_Time
 {
@@ -7,6 +8,11 @@ namespace Gatta_Time
         public MainMenuPage()
         {
             InitializeComponent();
+        }
+
+        private void ManualButton_Click(object sender, System.Windows.RoutedEventArgs e)
+        {
+            this.NavigationService.Navigate(new Uri("Manual.xaml", UriKind.Relative));
         }
     }
 }
