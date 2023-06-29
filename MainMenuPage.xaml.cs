@@ -14,5 +14,9 @@ namespace Gatta_Time
         {
             this.NavigationService.Navigate(new Uri("Manual.xaml", UriKind.Relative));
         }
+        private void FocusButton_Click(object sender, System.Windows.RoutedEventArgs e)
+        {
+            this.NavigationService.Navigate(new Uri("FocusMode.xaml", UriKind.Relative));
+        }
     }
 }
