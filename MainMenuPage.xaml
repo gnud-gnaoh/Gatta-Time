@@ -42,14 +42,18 @@
 
         <!-- Settings Row -->
         <Grid Grid.Row="0">
-            <Button Template="{StaticResource NoMouseOverButtonTemplate}" BorderThickness="0" Background="Transparent" HorizontalAlignment="Right" Width="70" Height="76">
+            <Button Template="{StaticResource NoMouseOverButtonTemplate}" BorderThickness="0" Background="Transparent" HorizontalAlignment="Right" Width="70" Height="76" Click="SettingsButton_Click">
                 <Image Source="/Images/settings.png"/>
             </Button>
         </Grid>
 
         <!-- Game Name Row -->
         <Grid Grid.Row="1">
-            <TextBlock Text="Gatta Time" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontSize="128" FontFamily="SVN-Retron 2000 Regular" Foreground="#63412A">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1569*"/>
+                <ColumnDefinition Width="31*"/>
+            </Grid.ColumnDefinitions>
+            <TextBlock Text="Gatta Time" HorizontalAlignment="Left" VerticalAlignment="Bottom" FontSize="128" FontFamily="SVN-Retron 2000 Regular" Foreground="#63412A" Margin="439,0,0,0">
                 <TextBlock.Effect>
                     <DropShadowEffect
                           ShadowDepth="6"

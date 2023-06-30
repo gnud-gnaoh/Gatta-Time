@@ -1,4 +1,4 @@
-﻿<Page x:Class="Gatta_Time.End"
+﻿<Page x:Class="Gatta_Time.Gatcha"
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
@@ -6,7 +6,7 @@
       xmlns:local="clr-namespace:Gatta_Time"
       mc:Ignorable="d" 
       d:DesignHeight="900" d:DesignWidth="1600"
-      Title="End">
+      Title="Gatcha">
 
     <Page.Resources>
         <ControlTemplate x:Key="NoMouseOverButtonTemplate"   
@@ -29,29 +29,12 @@
             </ControlTemplate.Triggers>
         </ControlTemplate>
     </Page.Resources>
-    <Grid>
-        <Grid>
-            <Grid.Background>
-                <ImageBrush Stretch="Fill" ImageSource="/Backgrounds/frame3.png" AlignmentY="Top" AlignmentX="Center"/>
-            </Grid.Background>
-            <TextBlock Foreground="white" FontFamily="SVN-Retron 2000 Regular" FontSize="128" HorizontalAlignment="Center" Margin="0,130,0,450">Congrats!</TextBlock>
-            <TextBlock Foreground="#9e9eac" FontFamily="SVN-Retron 2000 Regular" FontSize="50px" HorizontalAlignment="Center" Margin="0,396,0,317">here's your reward :33</TextBlock>
 
-        </Grid>
-        
-        <Button Template="{StaticResource NoMouseOverButtonTemplate}" BorderThickness="0" x:Name="btn" Click="btn_Click_home" Margin="466,708,989,44">
-            <Button.Background>
-                <SolidColorBrush Opacity="0"/>
-            </Button.Background>
-            <Image Source="\Images\dhome.png"/>
-        </Button>
-        
-        <Button Template="{StaticResource NoMouseOverButtonTemplate}" BorderThickness="0" x:Name="meo_btn" Click="btn_Click_meo" Margin="1038,708,417,44">
-            <Button.Background>
-                <SolidColorBrush Opacity="0"/>
-            </Button.Background>
-            <Image Source="\Images\meo.png"/>
-        </Button>
-        
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/Backgrounds/gatchabg.png"/>
+        </Grid.Background>
+        <Button Template="{StaticResource NoMouseOverButtonTemplate}" Background="Transparent" BorderBrush="Transparent" HorizontalAlignment="Left" Height="165" Margin="642,642,0,0" VerticalAlignment="Top" Width="628" Click="Button_Click"/>
+        <Button Template="{StaticResource NoMouseOverButtonTemplate}" Background="Transparent" BorderBrush="Transparent" HorizontalAlignment="Left" Height="165" Margin="1434,37,0,0" VerticalAlignment="Top" Width="166" Click="HomeButton_Click"/>
     </Grid>
 </Page>

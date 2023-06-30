@@ -8,7 +8,8 @@
         Title="MainWindow" 
         Height="900" 
         Width="1600"
-        WindowState="Maximized">
+        WindowState="Maximized"
+        WindowStyle="None">
     <DockPanel>
         <Frame x:Name="_NavigationFrame" NavigationUIVisibility="Hidden" />
     </DockPanel>

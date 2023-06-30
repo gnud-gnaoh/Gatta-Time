@@ -1,0 +1,52 @@
+﻿<Page x:Class="Gatta_Time.Settings"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Gatta_Time"
+      mc:Ignorable="d" 
+      d:DesignHeight="900" d:DesignWidth="1600"
+      Title="Settings">
+    <Page.Resources>
+        <ControlTemplate x:Key="NoMouseOverButtonTemplate"   
+                 TargetType="Button">
+            <Border Background="{TemplateBinding Background}"  
+          BorderBrush="{TemplateBinding BorderBrush}"  
+          BorderThickness="{TemplateBinding BorderThickness}">
+                <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"  
+                      VerticalAlignment="{TemplateBinding VerticalContentAlignment}" />
+            </Border>
+
+            <ControlTemplate.Triggers>
+                <Trigger Property="IsEnabled"  
+             Value="False">
+                    <Setter Property="Background"  
+              Value="{x:Static SystemColors.ControlLightBrush}" />
+                    <Setter Property="Foreground"  
+              Value="{x:Static SystemColors.GrayTextBrush}" />
+                </Trigger>
+            </ControlTemplate.Triggers>
+        </ControlTemplate>
+    </Page.Resources>
+
+    <Grid>
+
+        <Grid.Background>
+            <ImageBrush ImageSource="/Backgrounds/settingsbg.png" />
+        </Grid.Background>
+
+        <Line X1="0" Y1="250" X2="800" Y2="250" Stroke="Black" StrokeThickness="5" Margin="591,-45,597,666" />
+        <TextBlock HorizontalAlignment="Center" FontSize="64" Margin="0,69,0,688" Width="306" FontFamily="SVN-Retron 2000 Regular" Text="Settings"/>
+
+        <TextBlock HorizontalAlignment="Left" FontSize="32" Margin="455,240,0,562" Width="116" FontFamily="SVN-Retron 2000 Regular" Text="Sound:" Foreground="Black" />
+        <TextBlock HorizontalAlignment="Left" FontSize="28" Margin="455,321,0,475" Width="116" FontFamily="SVN-Retron 2000 Regular" Text="Music:" Foreground="Black" />
+        <TextBlock HorizontalAlignment="Left" FontSize="28" Margin="455,402,0,394" Width="299" FontFamily="SVN-Retron 2000 Regular" Text="Background sound:" Foreground="Black" />
+        <TextBlock HorizontalAlignment="Left" FontSize="28" Margin="455,482,0,314" Width="299" FontFamily="SVN-Retron 2000 Regular" Text="Language: English" Foreground="Black" />
+        <Image Margin="759,321,444,503" Source="/Images/slider.png" Stretch="Fill"/>
+        <Image Margin="759,402,444,426" Source="/Images/slider.png" Stretch="Fill"/>
+        <TextBlock HorizontalAlignment="Left" FontSize="64" Margin="1097,51,0,723" Width="388" FontFamily="SVN-Retron 2000 Regular" Text="x"/>
+
+        <Image Margin="759,248,444,579" Source="/Images/slider.png" Stretch="Fill"/>
+        <Button Template="{StaticResource NoMouseOverButtonTemplate}" Background="Transparent" BorderBrush="Transparent" HorizontalAlignment="Left" Margin="1116,94,0,0" VerticalAlignment="Top" Height="83" Width="121" Click="HomeButton_Click"/>
+    </Grid>
+</Page>

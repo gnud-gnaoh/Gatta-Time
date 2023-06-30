@@ -14,7 +14,7 @@
 
         </Grid.Background>
         <Grid Width="1100" Height="291" HorizontalAlignment="Center">
-            <TextBlock x:Name="Demso" Text="00:00:00" TextAlignment="Center" VerticalAlignment="Center" FontSize="300" Foreground="#4b4b6c"></TextBlock>
+            <TextBlock x:Name="Demso" Text="00:00:00" FontFamily="SVN-Retron 2000 Regular" TextAlignment="Center" VerticalAlignment="Center" FontSize="200" Foreground="#4b4b6c"></TextBlock>
         </Grid>
     </Grid>
 </Page>

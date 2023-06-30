@@ -28,7 +28,7 @@
             </ControlTemplate.Triggers>
         </ControlTemplate>
     </Page.Resources>
-    
+
     <Grid>
         <Grid.Background>
             <ImageBrush Stretch="Fill" ImageSource="/Backgrounds/frame1.png" AlignmentY="Top" AlignmentX="Center"/>
@@ -38,7 +38,7 @@
             <Border  BorderThickness="5"
                     BorderBrush="#63412A"></Border>
 
-            <TextBlock Foreground="#63412A" Text="Set Time" FontSize="128px" HorizontalAlignment="Center" Padding="50px" FontFamily="SVN-Retron 2000" Margin="0,0,0,437">
+            <TextBlock Foreground="#63412A" Text="Set Time" FontSize="128px" HorizontalAlignment="Center" Padding="50px" FontFamily="SVN-Retron 2000" Margin="0,-64,0,437">
             </TextBlock>
 
             <Button Template="{StaticResource NoMouseOverButtonTemplate}" BorderThickness="0" x:Name="btn" Click="btn_Click"  Margin="356,492,329,25" Padding="0,0,0,0">
@@ -49,26 +49,21 @@
 
             </Button>
 
-            <Grid Width="137" Height="198" Margin="50px 231px 638px 229px">
-                <Border BorderThickness="5"
-                    BorderBrush="#63412A">
-                    <TextBox Background="#FEEFD5" x:Name="chtxbValue" FontSize="130px" TextAlignment="Center"></TextBox>
-                </Border>
+            <Grid Width="137" Margin="52,234,640,274">
+                <TextBox Background="#FEEFD5" FontFamily="SVN-Retron 2000" x:Name="chtxbValue" FontSize="100" VerticalAlignment="Top" TextAlignment="Center"></TextBox>
+                <Border BorderThickness="5" BorderBrush="#63412A"/>
             </Grid>
-            <Grid Width="137px" Height="198" Margin="224px 231px 463px 229px">
-                <Border BorderThickness="5" BorderBrush="#63412A">
-                    <TextBox Background="#FEEFD5" x:Name="dhtxbValue" FontSize="130px" TextAlignment="Center"></TextBox>
-                </Border>
+            <Grid Width="137px" Margin="227,234,466,274">
+                <TextBox Background="#FEEFD5" FontFamily="SVN-Retron 2000" x:Name="dhtxbValue" FontSize="100" VerticalAlignment="Top" TextAlignment="Center"></TextBox>
+                <Border BorderThickness="5" BorderBrush="#63412A"/>
             </Grid>
-            <Grid Width="137px" Height="198px" Margin="469px 231px 223px 229px">
-                <Border BorderThickness="5" BorderBrush="#63412A">
-                    <TextBox Background="#FEEFD5" x:Name="cptxbValue" FontSize="130px" TextAlignment="Center"></TextBox>
-                </Border>
+            <Grid Width="137px" Margin="469,234,223,274">
+                <TextBox Background="#FEEFD5" FontFamily="SVN-Retron 2000" x:Name="cptxbValue" FontSize="100" VerticalAlignment="Top" TextAlignment="Center"></TextBox>
+                <Border BorderThickness="5" BorderBrush="#63412A"/>
             </Grid>
-            <Grid Width="137px" Height="198px" Margin="638px 231px 53px 229px">
-                <Border BorderThickness="5" BorderBrush="#63412A">
-                    <TextBox Background="#FEEFD5" x:Name="dptxbValue" FontSize="130px" TextAlignment="Center"></TextBox>
-                </Border>
+            <Grid Width="137px" Margin="638,234,53,274">
+                <TextBox Background="#FEEFD5" FontFamily="SVN-Retron 2000" x:Name="dptxbValue" FontSize="100" VerticalAlignment="Top" TextAlignment="Center"></TextBox>
+                <Border BorderThickness="5" BorderBrush="#63412A"/>
             </Grid>
 
         </Grid>
