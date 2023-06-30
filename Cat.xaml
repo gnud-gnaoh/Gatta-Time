@@ -34,6 +34,6 @@
             <ImageBrush ImageSource="/Backgrounds/catbg.png"/>
         </Grid.Background>
         <Button Template="{StaticResource NoMouseOverButtonTemplate}" Background="Transparent" BorderBrush="Transparent" HorizontalAlignment="Left" Height="165" Margin="553,654,0,0" VerticalAlignment="Top" Width="247" Click="Button_Click"/>
-        <Button Template="{StaticResource NoMouseOverButtonTemplate}" Background="Transparent" BorderBrush="Transparent" HorizontalAlignment="Left" Height="165" Margin="757,654,0,0" VerticalAlignment="Top" Width="247" Click="MeoButton_Click"/>
+        <Button Template="{StaticResource NoMouseOverButtonTemplate}" Background="Transparent" BorderBrush="Transparent" HorizontalAlignment="Left" Height="165" Margin="834,654,0,0" VerticalAlignment="Top" Width="213" Click="MeoButton_Click"/>
     </Grid>
 </Page>

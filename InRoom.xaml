@@ -46,9 +46,9 @@
             </Grid.ColumnDefinitions>
 
             <Image Grid.Column="0" Source="/Images/coin.png" Width="69" Height="81" VerticalAlignment="Center" HorizontalAlignment="Center"/>
-            <TextBlock Grid.Column="1" Text="1000" Margin="0,0,0,20" FontSize="40" FontFamily="SVN-Retron 2000 Regular" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+            <TextBlock Grid.Column="1" Text="10" Margin="0,0,0,20" FontSize="40" FontFamily="SVN-Retron 2000 Regular" VerticalAlignment="Center" HorizontalAlignment="Center"/>
             <Image Grid.Column="2" Source="/Images/money.png" Width="90" Height="85" VerticalAlignment="Center" HorizontalAlignment="Center"/>
-            <TextBlock Grid.Column="3" Text="6969" Margin="0,0,0,20" FontSize="40" FontFamily="SVN-Retron 2000 Regular" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+            <TextBlock Grid.Column="3" Text="0" Margin="0,0,0,20" FontSize="40" FontFamily="SVN-Retron 2000 Regular" VerticalAlignment="Center" HorizontalAlignment="Center"/>
         </Grid>
 
         <Button Template="{StaticResource NoMouseOverButtonTemplate}" Background="#F2CA80" Width="100" Height="100" HorizontalAlignment="Left" VerticalAlignment="Bottom" Click="cartButton_Click">
