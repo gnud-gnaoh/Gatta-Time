@@ -8,4 +8,86 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="Backgrounds\catbg.png" />
+    <None Remove="Backgrounds\frame1.png" />
+    <None Remove="Backgrounds\frame15.png" />
+    <None Remove="Backgrounds\frame3.png" />
+    <None Remove="Backgrounds\gatchabg.png" />
+    <None Remove="Backgrounds\settingsbg.png" />
+    <None Remove="Images\bgframe5.png" />
+    <None Remove="Images\button1.png" />
+    <None Remove="Images\cart.png" />
+    <None Remove="Images\cat_galaxy_IDLE.gif" />
+    <None Remove="Images\cat_galaxy_IDLE_SS.png" />
+    <None Remove="Images\cat_galaxy_WALK.gif" />
+    <None Remove="Images\cat_galaxy_WALK_SS.png" />
+    <None Remove="Images\cat_garfield_IDLE.gif" />
+    <None Remove="Images\cat_garfield_IDLE_SS.png" />
+    <None Remove="Images\cat_garfield_WALK.gif" />
+    <None Remove="Images\cat_garfield_WALK_SS.png" />
+    <None Remove="Images\cat_hackathon_IDLE.gif" />
+    <None Remove="Images\cat_hackathon_IDLE_SS.png" />
+    <None Remove="Images\cat_hackathon_WALK.gif" />
+    <None Remove="Images\cat_hackathon_WALK_SS.png" />
+    <None Remove="Images\cat_tricolor_IDLE.gif" />
+    <None Remove="Images\cat_tricolor_IDLE_SS.png" />
+    <None Remove="Images\cat_tricolor_WALK.gif" />
+    <None Remove="Images\cat_tricolor_WALK_SS.png" />
+    <None Remove="Images\coin.png" />
+    <None Remove="Images\dhome.png" />
+    <None Remove="Images\eye mode button.png" />
+    <None Remove="Images\focus mode button.png" />
+    <None Remove="Images\home.png" />
+    <None Remove="Images\info.png" />
+    <None Remove="Images\Meo.png" />
+    <None Remove="Images\money.png" />
+    <None Remove="Images\qq.png" />
+    <None Remove="Images\settings.png" />
+    <None Remove="Images\slider.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="WpfAnimatedGif" Version="2.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Backgrounds\catbg.png" />
+    <Resource Include="Backgrounds\frame1.png" />
+    <Resource Include="Backgrounds\frame15.png" />
+    <Resource Include="Backgrounds\frame3.png" />
+    <Resource Include="Backgrounds\frame5.png" />
+    <Resource Include="Backgrounds\gatchabg.png" />
+    <Resource Include="Backgrounds\settingsbg.png" />
+    <Resource Include="Images\button1.png" />
+    <Resource Include="Images\cart.png" />
+    <Resource Include="Images\cat_galaxy_IDLE.gif" />
+    <Resource Include="Images\cat_galaxy_IDLE_SS.png" />
+    <Resource Include="Images\cat_galaxy_WALK.gif" />
+    <Resource Include="Images\cat_galaxy_WALK_SS.png" />
+    <Resource Include="Images\cat_garfield_IDLE.gif" />
+    <Resource Include="Images\cat_garfield_IDLE_SS.png" />
+    <Resource Include="Images\cat_garfield_WALK.gif" />
+    <Resource Include="Images\cat_garfield_WALK_SS.png" />
+    <Resource Include="Images\cat_hackathon_IDLE.gif" />
+    <Resource Include="Images\cat_hackathon_IDLE_SS.png" />
+    <Resource Include="Images\cat_hackathon_WALK.gif" />
+    <Resource Include="Images\cat_hackathon_WALK_SS.png" />
+    <Resource Include="Images\cat_tricolor_IDLE.gif" />
+    <Resource Include="Images\cat_tricolor_IDLE_SS.png" />
+    <Resource Include="Images\cat_tricolor_WALK.gif" />
+    <Resource Include="Images\cat_tricolor_WALK_SS.png" />
+    <Resource Include="Images\coin.png" />
+    <Resource Include="Images\dhome.png" />
+    <Resource Include="Images\eye mode button.png" />
+    <Resource Include="Images\focus mode button.png" />
+    <Resource Include="Images\home.png" />
+    <Resource Include="Images\info.png" />
+    <Resource Include="Images\Meo.png" />
+    <Resource Include="Images\money.png" />
+    <Resource Include="Images\qq.png" />
+    <Resource Include="Images\settings.png" />
+    <Resource Include="Images\slider.png" />
+  </ItemGroup>
+
 </Project>
